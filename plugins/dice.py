@@ -1,6 +1,6 @@
-from pyrogram 	import filters
-from client			import app
-from random			import randint
+from pyrogram 			import filters
+from classes.client	import app
+from random					import randint
 
 def dice(app, msg, n):
 	username = app.name(msg.from_user)

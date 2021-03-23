@@ -1,5 +1,5 @@
-from pyrogram 	import filters
-from client			import app
+from pyrogram 			import filters
+from classes.client	import app
 
 @app.on_message(filters.command(['on', f'on@{app.username}']) & filters.user(app.katsu_id))
 def switch_on(app, msg):

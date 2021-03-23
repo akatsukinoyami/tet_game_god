@@ -1,6 +1,6 @@
-from pyrogram 	import filters
-from client			import app
-from random			import randint
+from pyrogram 			import filters
+from classes.client	import app
+from random					import randint
 
 @app.on_message(filters.command(["coin", "coin@teto_randombot"]))
 @app.decorator

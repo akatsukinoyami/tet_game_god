@@ -1,6 +1,6 @@
-from pyrogram 	import filters
-from client			import app
-from random			import randint
+from pyrogram 			import filters
+from classes.client	import app
+from random					import randint
 
 def int_rand(app, msg, n1, n2):
 	app.send_msg(msg, f"Твоё случайное число от {n1} до {n2}:\n{randint(int(n1), int(n2))}")
