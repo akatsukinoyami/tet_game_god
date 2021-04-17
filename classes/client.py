@@ -32,7 +32,7 @@ class app(Client):
 			
 	@staticmethod
 	def id_formatter(msg):
-		txt = f'**Bot:** __@{self.username}__'
+		txt = f'**Bot:** __@teto_randbot__'
 		txt+= f'\n**Chat:** __{msg.chat.title}__'
 		txt+= f'\n**Chat ID:** __{msg.chat.id}__**/**__{msg.message_id}__'
 		user= msg.from_user
@@ -87,6 +87,6 @@ class app(Client):
 		if user.username is not None:
 			return f"**@{user.username}**" 
 		elif user.last_name is not None:
-			return f"**{user.first_name} {user._last.name}**"
+			return f"**{user.first_name} {user.last.name}**"
 		else:
 			return f"**{user.first_name}**"
